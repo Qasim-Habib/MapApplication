@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="1280.0" stylesheets="@CatalogStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConfirmMapsController">
+   <children>
+       <Button fx:id="btn_message" layoutX="48.0" layoutY="250.0" mnemonicParsing="false" onAction="#messageFunc" prefHeight="47.0" prefWidth="155.0" text="Messages" />
+     <Button fx:id="Back" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#backFunc" prefHeight="47.0" prefWidth="155.0" text="Back" />
+	<TableView fx:id="searchTable" layoutX="236.0" layoutY="250" prefHeight="400.0" prefWidth="808.0">
+        <columns>
+          <TableColumn fx:id="CityCol" prefWidth="150" text="City" />
+          <TableColumn fx:id="DescriptionCol" prefWidth="300" text="Description" />
+            <TableColumn fx:id="mapCol" prefWidth="120" text="#Maps" />
+             <TableColumn fx:id="placeCol" prefWidth="120" text="#Places" />
+             <TableColumn fx:id="pathCol" prefWidth="120" text="#Paths" />
+        </columns>
+      </TableView>
+      <Button fx:id="searchCity" layoutX="237.0" layoutY="183.0" mnemonicParsing="false" onAction="#searchCityBtn" prefHeight="47.0" prefWidth="394.0" text="Search City" />
+      <TableView fx:id="searchTable1" layoutX="237.0" layoutY="250" prefHeight="400.0" prefWidth="808.0">
+         <columns>
+         	<TableColumn fx:id="PlaceCol1" prefWidth="150" text="Place" />
+            <TableColumn fx:id="CityCol1" prefWidth="150" text="City" />
+            <TableColumn fx:id="DescriptionCol1" prefWidth="200.0" text="Desctription" />
+            <TableColumn fx:id="mapCol1" prefWidth="100.0" text="#Maps" />
+            <TableColumn fx:id="UpdateCol" prefWidth="350.0" text="Status" />
+         </columns>
+      </TableView>
+        <TextField fx:id="placeField" layoutX="860.0" layoutY="119.0" prefHeight="50.0" prefWidth="180.0" visible="false" />	
+          <Button fx:id="searchPlace" layoutX="647.0" layoutY="183.0" mnemonicParsing="false" onAction="#searchPlaceBtn" prefHeight="47.0" prefWidth="394.0" text="Search Place" />
+          <Button fx:id="view" layoutX="883.0" layoutY="659.0" mnemonicParsing="false" onAction="#viewMaps" text="View maps" visible="false" />	
+         <ComboBox fx:id="comboBox" layoutX="237.0" layoutY="118.0" prefHeight="47.0" prefWidth="394.0" promptText="Search by" />
+         <TextField fx:id="searchText" layoutX="650.0" layoutY="119.0" prefHeight="50.0" prefWidth="394.0" />
+   </children>
+</AnchorPane>

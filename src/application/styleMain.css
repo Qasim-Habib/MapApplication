@@ -1,0 +1,54 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#pane {
+	
+	-fx-background-image: url("mainpage.png");
+}
+.text-input {
+    -fx-text-fill: white;
+    -fx-font-family: Quicksand;
+    -fx-font-size: 20pt;
+}
+.text {
+	-fx-font-family: Quicksand;
+	-fx-font-size: 20pt;
+	 -fx-font-smoothing-type: gray;
+}
+.button {
+	-fx-background-color: transparent;
+	-fx-background-radius: 100;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+	-fx-border-radius: 100;
+	-fx-border-width: 2 2 2 2;
+}
+.button:hover {
+	-fx-background-color: #00d0ed;
+}
+.button:pressed {
+	-fx-background-color: #00a4bb;
+}
+#Catalog {	
+	-fx-background-color: #0086de;
+	-fx-background-radius: 100;
+	-fx-text-fill: white;
+}
+#Catalog:hover {	
+	-fx-background-color: #5cabe7;
+}
+#Catalog:pressed {	
+	-fx-background-color: #2d6189;
+}
+.text-field {	
+	-fx-background-color:  transparent;
+	-fx-border-color:  white;
+	-fx-border-width:  0px 0px 2px 0px;
+	-fx-text-fill: white;
+	-fx-font-size: 20;
+	-fx-prompt-text-fill: white;
+	-fx-font-size: 18pt;
+}
+.label{
+	-fx-text-alignment: right;
+	-fx-font-family: Quicksand;
+	-fx-font-size: 18pt; 
+}
